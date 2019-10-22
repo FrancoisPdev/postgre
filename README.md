@@ -1,4 +1,6 @@
 # postgre
+Hello everyone
+![postegre](https://github.com/fanfanpsg/postgre/blob/master/postegre.png?raw=true)
 how to start and use postgreSQL
 
 
