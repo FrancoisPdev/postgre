@@ -96,7 +96,8 @@ Connect to database:
 \c mytestdb
 You are now connected to database "mytestdb" as user "postgres".
 ```
-Other PostgreSQL utilities installed such as createuser and createdb can be used to create database and users.
+
+Other PostgreSQL utilities installed such as createuser and createdb can be used to create database and users. (use "```quit```" if you are in ```postgres=#```.
 ```
 postgres@ubuntu:~$ createuser myuser --password
 Password:
