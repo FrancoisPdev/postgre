@@ -3,7 +3,6 @@ Hello everyone
 ![postegre](https://github.com/fanfanpsg/postgre/blob/master/postegre.png?raw=true)
 how to start and use postgreSQL
 
-
 1)
 update/grade systeme
 ```
@@ -138,3 +137,5 @@ psql -U martin -h localhost bdd
 À noter qu’il est possible de réaliser toutes ces opérations directement en SQL mais il est préférable d’utiliser les commandes dédiées.
 
 En cas de doute n’hésitez pas utiliser ```--help``` sur les commandes précédentes.
+***
+tips : if you are in the CLI, write : sudo -i -u postgre
