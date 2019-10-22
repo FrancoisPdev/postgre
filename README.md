@@ -105,3 +105,36 @@ postgres@ubuntu:~$ createdb mydb -O myuser
 postgres@ubuntu:~$ psql -l 
 ```
 ### We can create and connect to a database on PostgreSQL server.
+***
+en Français
+
+### Créer utilisateur PostgreSQL
+Lorsqu’on vient d’un autre SGBD on ne sait pas forcément comment fonctionne PostgreSQL pour la création d’utilisateur.
+
+En fait il possède des commandes et un utilisateur dédié. La première chose à faire va donc être de basculer sur cet utilisateur.
+
+```
+sudo -s -u postgres
+```
+Ensuite nous allons créer un nouvel utilisateur pour notre projet.
+
+Il est toujours mieux d’isoler les rôles et de limiter la portée d’une base à un utilisateur.
+```
+createuser -d -P username
+```
+L’option -d va permettre à notre utilisateur de créer des bases. L’option -P va forcer l’affectation d’un mot de passe qui nous sera demandé de manière interactive.
+
+### Créer la base de donnée
+
+Nous allons maintenant créer la base de données en spécifiant que c’est mon utilisateur qui en est le possesseur (owner), d’où le -O. Cette opération se fait toujours depuis le shell postgres.
+```
+createdb -O bddname bdd
+```
+Connexion à la base de données PostgreSQL
+Nous pouvons maintenant sortir du shell postgres et nous connecter avec notre utilisateur:
+```
+psql -U martin -h localhost bdd
+```
+À noter qu’il est possible de réaliser toutes ces opérations directement en SQL mais il est préférable d’utiliser les commandes dédiées.
+
+En cas de doute n’hésitez pas utiliser ```--help``` sur les commandes précédentes.
