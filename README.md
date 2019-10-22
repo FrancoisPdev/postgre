@@ -60,8 +60,9 @@ Get connection details like below.
 ```
 psql (12.0 (Ubuntu 12.0-1.pgdg18.04+1))
 Type "help" for help.
-
-postgres=# \conninfo
+```
+```
+\conninfo
 You are connected to database "postgres" as user "postgres" via socket in "/var/run/postgresql" at port "5432".
 ```
 Let’s create a test database and user to see if it’s working.
@@ -92,7 +93,7 @@ postgres=# \l
 ```
 Connect to database:
 ```
-postgres-# \c mytestdb
+\c mytestdb
 You are now connected to database "mytestdb" as user "postgres".
 ```
 Other PostgreSQL utilities installed such as createuser and createdb can be used to create database and users.
