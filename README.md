@@ -148,3 +148,5 @@ after you can surf in the folder is simply use :
 cd /etc/postgresql
 ```
 after use ``` ls ``` and if you have 11 or 12 you have the version of postgre.
+
+now you can find the folder who execute postegre :```usr/lib/postgresql/11/bin``` the files is ```pg_ctl```
