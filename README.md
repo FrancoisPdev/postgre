@@ -138,4 +138,13 @@ psql -U martin -h localhost bdd
 
 En cas de doute n’hésitez pas utiliser ```--help``` sur les commandes précédentes.
 ***
+
 tips : if you are in the CLI, write : sudo -i -u postgre
+```
+postgres@yesweweb-X542UA:~$
+```
+after you can surf in the folder is simply use : 
+```
+cd /etc/postgresql
+```
+after use ``` ls ``` and if you have 11 or 12 you have the version of postgre.
