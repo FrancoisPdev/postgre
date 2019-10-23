@@ -1,5 +1,7 @@
 # postgre
 Hello everyone
+
+[Tuto](#Tuto en Français)
 ![postegre](https://github.com/fanfanpsg/postgre/blob/master/postegre.png?raw=true)
 how to start and use postgreSQL
 
@@ -105,7 +107,7 @@ postgres@ubuntu:~$ psql -l
 ```
 ### We can create and connect to a database on PostgreSQL server.
 ***
-en Français
+### Tuto en Français
 
 ### Créer utilisateur PostgreSQL
 Lorsqu’on vient d’un autre SGBD on ne sait pas forcément comment fonctionne PostgreSQL pour la création d’utilisateur.
