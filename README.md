@@ -107,7 +107,7 @@ postgres@ubuntu:~$ psql -l
 ```
 ### We can create and connect to a database on PostgreSQL server.
 ***
-### Tuto en Français
+### Tuto
 
 ### Créer utilisateur PostgreSQL
 Lorsqu’on vient d’un autre SGBD on ne sait pas forcément comment fonctionne PostgreSQL pour la création d’utilisateur.
