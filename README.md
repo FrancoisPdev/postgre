@@ -140,10 +140,11 @@ En cas de doute n’hésitez pas utiliser ```--help``` sur les commandes précé
 ***
 
 tips : if you are in the CLI, write : sudo -i -u postgre
+you can see this :
 ```
 postgres@yesweweb-X542UA:~$
 ```
-after you can surf in the folder is simply use : 
+Now you can surf in the folder and this is simply use : 
 ```
 cd /etc/postgresql
 ```
