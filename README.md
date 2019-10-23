@@ -1,7 +1,7 @@
 # postgre
 Hello everyone
 
-[Tuto](#Tuto)
+[Tuto](#Tuto)(FR)
 ![postegre](https://github.com/fanfanpsg/postgre/blob/master/postegre.png?raw=true)
 how to start and use postgreSQL
 
@@ -156,9 +156,12 @@ now you can find the folder who execute postegre :```usr/lib/postgresql/11/bin``
 
 ### Start service of postgre
 
-```postgres@yesweweb-X542UA:/usr/lib/postgresql/11/bin$ service postgresql start
 ```
-```postgres@yesweweb-X542UA:/usr/lib/postgresql/11/bin$ service postgresql status
+postgres@yesweweb-X542UA:/usr/lib/postgresql/11/bin$ service postgresql start
 ```
-````postgres@yesweweb-X542UA:/usr/lib/postgresql/11/bin$ ps auxf | grep postgres
+```
+postgres@yesweweb-X542UA:/usr/lib/postgresql/11/bin$ service postgresql status
+```
+```
+postgres@yesweweb-X542UA:/usr/lib/postgresql/11/bin$ ps auxf | grep postgres
 ```
