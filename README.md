@@ -2,6 +2,8 @@
 Hello everyone
 
 [Tuto](#Tuto)(FR)
+
+[Tips](#Tips)
 ![postegre](https://github.com/fanfanpsg/postgre/blob/master/postegre.png?raw=true)
 how to start and use postgreSQL
 
@@ -141,7 +143,8 @@ psql -U martin -h localhost bdd
 En cas de doute n’hésitez pas utiliser ```--help``` sur les commandes précédentes.
 ***
 
-tips : if you are in the CLI, write : sudo -i -u postgre (= root )
+### Tips
+: if you are in the CLI, write : sudo -i -u postgre (= root )
 you can see this :
 ```
 postgres@yesweweb-X542UA:~$
