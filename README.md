@@ -139,7 +139,7 @@ psql -U martin -h localhost bdd
 En cas de doute n’hésitez pas utiliser ```--help``` sur les commandes précédentes.
 ***
 
-tips : if you are in the CLI, write : sudo -i -u postgre
+tips : if you are in the CLI, write : sudo -i -u postgre (= root )
 you can see this :
 ```
 postgres@yesweweb-X542UA:~$
@@ -151,3 +151,12 @@ cd /etc/postgresql
 after use ``` ls ``` and if you have 11 or 12 you have the version of postgre.
 
 now you can find the folder who execute postegre :```usr/lib/postgresql/11/bin``` the files is ```pg_ctl```
+
+### Start service of postgre
+
+```postgres@yesweweb-X542UA:/usr/lib/postgresql/11/bin$ service postgresql start
+```
+```postgres@yesweweb-X542UA:/usr/lib/postgresql/11/bin$ service postgresql status
+```
+````postgres@yesweweb-X542UA:/usr/lib/postgresql/11/bin$ ps auxf | grep postgres
+```
