@@ -172,3 +172,8 @@ postgres@yesweweb-X542UA:/usr/lib/postgresql/11/bin$ service postgresql status
 ```
 postgres@yesweweb-X542UA:/usr/lib/postgresql/11/bin$ ps auxf | grep postgres
 ```
+### hba
+
+Authorization of access: pg_hba
+
+this one is the most important folder with other essential folder.
