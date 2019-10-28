@@ -148,6 +148,8 @@ En cas de doute n’hésitez pas utiliser ```--help``` sur les commandes précé
 installing pgcli (for better view):
 ``` sudo apt install pgcli ```
 
+***
+
 If you are in the CLI, write : sudo -i -u postgre (= root )
 you can see this :
 ```
