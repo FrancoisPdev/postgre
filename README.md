@@ -4,6 +4,9 @@ Hello everyone
 [Tuto](#Tuto)(FR)
 
 [Tips](#Tips)
+
+[Password Lost](#password)
+
 ![postegre](https://github.com/fanfanpsg/postgre/blob/master/postegre.png?raw=true)
 how to start and use postgreSQL
 
@@ -611,4 +614,48 @@ postgres@yesweweb-X542UA:/usr/lib/postgresql/11/bin$ ps auxf | grep postgres
 
 Authorization of access: pg_hba
 
-this one is the most important folder with other essential folder.
+(this one is the most important folder with other essential folder.)
+
+# password
+### Reset Forgotten Password For postgres User
+* Summary: in this tutorial, we will show you step by step how to reset forgotten password of postgres user in PostgreSQL.
+
+For some reasons, after installing PostgreSQL, you may forget the password for the `postgres` user. In this case, you need to know how to reset the password.
+
+PostgreSQL uses the  `pg_hba.conf` configuration file that is stored in the database data directory to control the client authentication. HBA means host-based authentication. To reset the password for the `postgres` user, you need to modify some parameters in this configuration file.
+
+Step 1. Backup the `pg_dba.conf` file by copying it to a different location or just rename it to `pg_dba_bk.conf`
+
+Step 2. Edit the `pg_dba.conf` file by adding the following line as the first line after the comment lines. The comment line starts with the `#` sign.
+
+```
+local  all   all   trust
+```
+
+If your PostgreSQL installation does not support local, which indicates UNIX sockets, for example, if you install PostgreSQL on Windows OS. If you use local in this case, you cannot start PostgreSQL service. In this situation, you need to use the following entry in the `pg_hba.conf` file:
+
+```
+host    all              postgres           127.0.0.1/32            trust
+```
+
+This step ensures that you can log into PostgreSQL database server without using the password.
+
+Step 3. Restart PostgreSQL server e.g., in Linux, you use the following command:
+
+```
+sudo /etc/init.d/postgresql restart
+```
+
+Step 4. Connect to PostgreSQL database server and change the password of the `postgres` user.
+
+```
+ALTER USER postgres with password 'very_secure_password';
+```
+
+Step 5. Restore the `pg_db.conf` file and restart the server, and connect to the PostgreSQL database server with new password.
+
+```
+sudo /etc/init.d/postgresql restart
+```
+
+This tutorial, is for reset the forgotten password of the `postgres` user.
