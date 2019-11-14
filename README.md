@@ -581,12 +581,7 @@ Collect statistics:
 `
 ANALYZE table_name;
 `
-
-
-
-
-
-
+***
 
 If you are in the CLI, write : sudo -i -u postgre (= root )
 you can see this :
