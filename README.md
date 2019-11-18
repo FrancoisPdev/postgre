@@ -4,7 +4,9 @@ Hello everyone
 [Tuto](#Tuto)(FR)
 
 [Tips](#Tips)
- + [Managing databases](#managing-databases)
+ * [Managing databases](#managing-databases)
+   * [Managing tables](managing-tables)
+   * [Managing views](managing-views)
  
 [Password Lost](#password)
 
