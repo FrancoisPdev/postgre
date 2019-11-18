@@ -4,7 +4,8 @@ Hello everyone
 [Tuto](#Tuto)(FR)
 
 [Tips](#Tips)
-
+ + [Managing databases](#managing-databases)
+ 
 [Password Lost](#password)
 
 ![postegre](https://github.com/fanfanpsg/postgre/blob/master/postegre.png?raw=true)
@@ -229,7 +230,7 @@ Allow role_1 to set its role as role_2:
 
 `GRANT role_2 TO role_1;`
 
-## Managing databases
+### Managing databases
 
 Create a new database:
 
