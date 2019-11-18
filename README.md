@@ -5,8 +5,8 @@ Hello everyone
 
 [Tips](#Tips)
  * [Managing databases](#managing-databases)
-   * [Managing tables](managing-tables)
-   * [Managing views](managing-views)
+   * [Managing tables](#managing-tables)
+   * [Managing views](#managing-views)
  
 [Password Lost](#password)
 
