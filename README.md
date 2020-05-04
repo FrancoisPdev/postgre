@@ -1,5 +1,5 @@
 # postgre
-Hello everyone
+Hello everyone i can't explain : Tuto/Tips/Managing view and Password Lost, may not work
 
 [Tuto](#Tuto)(FR)
 
